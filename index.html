@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bootstrap: Grid System</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
@@ -17,11 +17,11 @@
 <body>
 	<!-- Inserta tu código aqui -->
   <header>
-    <div class="container">
-      <div class="row top-menu">
+    <div class="container text-white">
+      <div class="row">
         <nav>
-          <img class="logo" src="img/PicsArt_04-12-07.09.57.jpg">
           <div>
+            <img class="logo navbar-left" src="img/PicsArt_04-12-07.09.57.jpg">
             <ul class="nav navbar-nav">
                <li><a href="#"><span class="fa fa-newspaper-o"></span>Lastest News</a></li>
                <li><a href="#"><span class="fa fa-rss"></span>Enlaces Rss</a></li>
@@ -37,8 +37,9 @@
       </div>
     </div>
   </header>
+  <!-- menu -->
   <section>
-    <div class="container">
+    <div class="container text-white">
       <div class="row">
         <div class="menu">
           <nav class="navbar navbar-default" role="navigation">
@@ -56,10 +57,10 @@
                 <!-- Agrupar los enlaces de navegación, los formularios y cualquier
                      otro elemento que se pueda ocultar al minimizar la barra -->
             <div class="bg-dark collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav col-md-12">
                 <li><a href="#">Bienvenido</a></li>
                 <li><a href="#">Actualidades</a></li>
-                <li><a href="#">En direto</a></li>
+                <li><a href="#">En directo</a></li>
                 <li><a href="#">Reporte financiero</a></li>
                 <li><a href="#">Nuestra oferta</a></li>
                 <li><a href="#">De mi para ti</a></li>
@@ -70,66 +71,247 @@
       </div>
     </div>
   </section>
+  <!-- columnas -->
   <section>
-    <div class="container">
+    <div class="container text-white">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <h1 class="titlecol1">Historia Destacada</h1>
-          <ul>
-            <li><b>Artículo</b></li>
-            <span class="sep"></span>
-            <li>publicado el 03/10/2015</li>
-          </ul>
-          <div class="text">
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus. Iusto sit similique veniam, debitis accusamus magni sunt qui facere blanditiis suscipit, laudantium, quidem incidunt.</p>
-            <span class="fa"></span>
+        <!-- primera columna -->
+        <div class="col-xs-12 col-sm-6 col-md-5">
+          <!-- primer cuadro -->
+          <div>
+            <div class="titlecol"><h5>Historia Destacada</h5></div>
+            <ul>
+              <li><b>Artículo</b></li>
+              <span class="sep"></span>
+              <li>publicado el 03/10/2015</li>
+            </ul>
+            <div class="text">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus. Iusto sit similique veniam, debitis accusamus magni sunt qui facere blanditiis suscipit, laudantium, quidem incidunt.</p>
+              <ul>
+                <span class="fa fa-bookmark"></span>
+                <li><a href="#"><b>Ver más...</b></a></li>
+                 <span class="fa fa-tags"></span>
+                <li><b>Etiquetas</b></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+                <li><a href="#">diligat</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+          <!-- segundo cuadro -->
+          <div>
+            <div class="titlecol"><p>Webzone</p></div>
+            <ul>
+              <li><b><u>Preguntas</u></b></li>
+              <span class="sep"></span>
+              <li>publicado el 03/10/2015</li>
+            </ul>
+            <div class="text">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus. Iusto sit similique veniam, debitis accusamus magni sunt qui facere blanditiis suscipit, laudantium, quidem incidunt.</p>
+              <ul>
+                <span class="fa fa-bookmark"></span>
+                <li><a href="#"><b>Ver más...</b></a></li>
+                 <span class="fa fa-tags"></span>
+                <li><b>Etiquetas</b></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+                <li><a href="#">diligat</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+          <!-- tercer cuadro -->
+          <div>
+            <ul>
+              <li><b>Artículo</b></li>
+              <span class="sep"></span>
+              <li>publicado el 03/10/2015</li>
+            </ul>
+            <img class="fotogrupo" src="img/group/13063426_1129616260413104_8770496773792570994_o.jpg">
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus. Iusto sit similique veniam, debitis accusamus magni sunt qui facere blanditiis suscipit, laudantium, quidem incidunt.</p>
+              <ul>
+                <span class="fa fa-bookmark"></span>
+                <li><a href="#"><b>Ver más...</b></a></li>
+                 <span class="fa fa-tags"></span>
+                <li><b>Etiquetas</b></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+                <li><a href="#">diligat</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+          <!-- cuarto cuadro -->
+          <div>
+             <div class="text">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus. Iusto sit similique veniam, debitis accusamus magni sunt qui facere blanditiis suscipit, laudantium, quidem incidunt.</p>
+              <ul>
+                <span class="fa fa-bookmark"></span>
+                <li><a href="#"><b>Ver más...</b></a></li>
+                 <span class="fa fa-tags"></span>
+                <li><b>Etiquetas</b></li>
+                <li><a href="#">lorem</a></li>
+                <li><a href="#">ipsum</a></li>
+                <li><a href="#">diligat</a></li>
+              </ul>
+            </div>
+            <hr>
           </div>
         </div>
+        <!-- segunda columna -->
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <!-- 4:3 aspect ratio -->
-          <div class="col-xs-12 col-sm-6 col-md-4 embed-responsive embed-responsive-4by3">
-           <iframe width="420" height="315" src="https://www.youtube.com/embed/vx2u5uUu3DE" frameborder="0" allowfullscreen></iframe>
-          </div> 
-        </div>
+          <!-- video -->
+          <div class="video">
+            <div>
+              <div class="titlecol"><h5>Himno de vida</h5></div>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/vx2u5uUu3DE" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="text">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus. Iusto sit similique veniam, debitis accusamus magni sunt qui facere blanditiis suscipit, laudantium, quidem incidunt.</p>
+                <span class="fa fa-bookmark"><a href="#"><b>Ver más...</b></a></span>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <!-- segundo cuadro -->
+          <div class="calendar">
+            <div class="titlecol"><h5>Agenda</h5></div>
+              <table>
+                <tr>
+                  <td><div class="date">23 Enero</div></td>
+                  <td><div class="text-calendar"><h5><b>Lorem ipsum dolor sit amet</b></h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>De 23 a 28 de Diciembre 2015</p></div></td> 
+                </tr>
+                <tr>
+                  <td><div class="date">23 Enero</div></td>
+                  <td><div class="text-calendar"><h5><b>Lorem ipsum dolor sit amet</b></h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>De 23 a 28 de Diciembre 2015</p></div></td> 
+                </tr>
+                <tr>
+                  <td><div class="date">23 Enero</div></td>
+                  <td><div class="text-calendar"><h5><b>Lorem ipsum dolor sit amet</b></h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>De 23 a 28 de Diciembre 2015</p></div></td> 
+                </tr>
+                <tr>
+                  <td><div class="date">23 Enero</div></td>
+                  <td><div class="text-calendar"><h5><b>Lorem ipsum dolor sit amet</b></h5><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p>De 23 a 28 de Diciembre 2015</p></div></td> 
+                </tr>
+              </table>
+            <hr>
+          </div>
+          <!-- segundo cuadro -->
+          <div class="places">
+            <a href="#">Localidades</a>
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus.</p>
+            <br>
+            <a href="#">Hospimedia</a>
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ut, provident at architecto, ad minus.</p>
+          </div>
+          </div>
+        <!-- tercera columna link's -->
         <div>
-          <div class="col-xs-12 col-sm-4 col-md-4"></div>
-          <div class="col-xs-12 col-sm-4 col-md-4"></div>
-          <div class="col-xs-12 col-sm-4 col-md-4"></div>
+          <!-- primera grupo links -->
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <h3>Más información</h3>
+            <ol>
+              <li><span class="fa fa-tags"></span><a href="#">Finanzas y fiscalizacion</a></li><br>
+              <li><span class="fa fa-tags"></span><a href="#">Inversión y equipos</a></li><br>
+              <li><span class="fa fa-tags"></span><a href="#">Medio ambiente</a></li><br>
+              <li><span class="fa fa-tags"></span><a href="#">Habitat / Urbanismo</a></li><br>
+              <li><span class="fa fa-tags"></span><a href="#">Sanidad</a></li><br>
+              <li><span class="fa fa-tags"></span><a href="#">Social / Servicios</a></li><br>
+              <li><span class="fa fa-tags"></span><a href="#">Transporte</a></li><br>
+            </ol>
+            <hr>
+          </div>
+          <!-- segundo grupo -->
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="bg-dark">
+              <h3>MAGAZINE</h3>
+              <h3><b>ECODEFI</b></h3>
+              <h5>ENQUETE</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maiores nisi rerum, ipsam animi ipsum sed ducimus similique quos quisquam cupiditate quae distinctio aliquam quidem tempora eos autem possimus dolore!</p>
+              <h5>PREGUNTAS</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio veniam magnam doloribus.</p>
+            </div>
+          </div>
+          <!-- tercer grupo -->
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="bg-dark">
+              <h3>MAGAZINE</h3>
+              <h3><b>ACCIONES COMUNES</b></h3>
+              <h5>ENQUETE</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit maiores nisi rerum, ipsam animi ipsum sed ducimus similique quos quisquam cupiditate quae distinctio aliquam quidem tempora eos autem possimus dolore!</p>
+              <h5>PREGUNTAS</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem odio veniam magnam doloribus.</p>
+            </div>
+          </div>
+          <!-- cuarto grupo -->
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="nueva bg-dark">
+              <h4><b>Nueva generación de la internet</b></h4>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div>  
+  <hr class="separacion col-xs-12 col-sm-12 col-md-12">
   </section>
-   <!-- 
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="slider">
-            <ul>
-              <li><img src="img/paisajes/1013838_10202273034282747_282340568_n.jpg"></li>
-              <li><img src="img/paisajes/10254010_10204978808245405_3680259139336469540_n.jpg"></li>
-              <li><img src="img/paisajes/10255573_10203128020096858_5383686006837349460_n.jpg"></li>
-              <li><img src="img/paisajes/10255851_10204685917963331_8987649141888936875_n.jpg"></li>
-              <li><img src="img/paisajes/1798750_10202404435527696_41067920_n.jpg"></li>
-              <li><img src="img/paisajes/10460319_10203323724269340_6597260456315943004_n.jpg"></li>
-              <li><img src="img/paisajes/10520769_10203561260167589_1496775124922062369_n.jpg"></li>
-              <li><img src="img/paisajes/12373262_10207165746797502_8978559565796743159_n.jpg"></li>
-              <li><img src="img/paisajes/11694988_10206216539947924_6188855893136768738_n.jpg"></li>
-            </ul>
-        </div>
-        </div>
-      </div>
-    </div>
-  </section>-->
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-xs-3 col-sm-6 col-md-3"></div>
-        <div class="col-xs-3 col-sm-6 col-md-3"></div>
-        <div class="col-xs-2 col-sm-6 col-md-2"></div>
-        <div class="col-xs-2 col-sm-6 col-md-2"></div>
-        <div class="col-xs-2 col-sm-6 col-md-2"></div>
+        <div class="col-xs-3 col-sm-6 col-md-3">
+          <h3>Rubros</h3>
+          <ol>
+            <li><span class="fa fa-tags"></span><a href="#">Actualidades</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">En directo</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Reporte financiero</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Nuestra oferta</a></li><br>
+             <li><span class="fa fa-tags"></span><a href="#">De Nosotros a ustedes</a></li><br>
+          </ol>
+        </div>
+        <div class="col-xs-3 col-sm-6 col-md-3">
+          <h3>Expertise</h3>
+          <ol>
+            <li><span class="fa fa-tags"></span><a href="#">Finanzas y fiscalizacion</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Investigación y equipos</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Medio ambiente</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Habitat / Urbanismo</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Sanidad</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Social / Servicios</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Transporte</a></li><br>
+          </ol>
+        </div>
+        <div class="col-xs-2 col-sm-6 col-md-2">
+          <h3>Suscripción</h3>
+          <ol>
+            <li><span class="fa fa-tags"></span><a href="#">Todo el flujo</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Flujo RSS para expertos</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Noticias</a></li><br>
+          </ol>
+        </div>
+        <div class="col-xs-2 col-sm-6 col-md-2">
+          <h3>Nosotros</h3>
+          <ol>
+            <li><span class="fa fa-tags"></span><a href="#">¿Quienes somos?</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Plan del sitio</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Información legal</a></li><br>
+          </ol>
+        </div>
+        <div class="col-xs-2 col-sm-6 col-md-2">
+          <h3>Contacto</h3>
+          <ol>
+            <li><span class="fa fa-tags"></span><a href="#">Contáctanos</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">FAQ</a></li><br>
+            <li><span class="fa fa-tags"></span><a href="#">Haga sus preguntas</a></li><br>
+          </ol>
+        </div>
       </div>
     </div>
   </footer>
